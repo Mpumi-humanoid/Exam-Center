@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Repository | My Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <div class="home-shell">
+        <header class="topbar">
+            <div class="brand-row">
+                <div class="brand-badge">R</div>
+                <div class="brand-copy">
+                    <span class="brand-name">Result Repository</span>
+                    <span class="brand-subtitle">student portal</span>
+                </div>
+            </div>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="home.html">← Welcome page</a>
+                <a href="results.html">Results</a>
+                <a href="profile.html" class="active">Profile</a>
+            </nav>
+
+            <div class="nav-actions">
+                <span class="student-tag">STU-224871</span>
+                <a class="ghost-button" href="index.html">Log out</a>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="page-head">
+                <p class="eyebrow">Student profile</p>
+                <h1>Your information &amp; progress</h1>
+                <p class="lead">A snapshot of who you are on record and how your academic progress is tracking.</p>
+            </section>
+
+            <section class="profile-layout">
+                <article class="profile-card">
+                    <div class="avatar">STU</div>
+                    <h2 class="profile-name">STUDENT</h2>
+                    <span class="profile-id">STU-224871</span>
+
+                    <ul class="detail-list">
+                        <li>
+                            <span class="detail-label">Programme</span>
+                            <span class="detail-value">BSc Computer Science &amp; Electronics</span>
+                        </li>
+                        <li>
+                            <span class="detail-label">Email</span>
+                            <span class="detail-value">224871@STU.com</span>
+                        </li>
+                        <li>
+                            <span class="detail-label">Enrolled</span>
+                            <span class="detail-value">2024</span>
+                        </li>
+                        <li>
+                            <span class="detail-label">Current semester</span>
+                            <span class="detail-value">Sem 1, 2026</span>
+                        </li>
+                        <li>
+                            <span class="detail-label">Status</span>
+                            <span class="detail-value"><span class="status-pill">Active</span></span>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="progress-panel">
+                    <div class="section-header">
+                        <p class="eyebrow small">Academic progress</p>
+                        <h2>Credits &amp; standing</h2>
+                    </div>
+
+                    <div class="progress-block">
+                        <div class="progress-head">
+                            <span>Credits completed</span>
+                            <strong>144 / 360</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 40%;"></div>
+                        </div>
+                        <small class="progress-note">40% through your degree</small>
+                    </div>
+
+                    <div class="mini-stats-row">
+                        <div class="mini-stat">
+                            <span class="stat-label">Overall average</span>
+                            <strong>85%</strong>
+                        </div>
+                        <div class="mini-stat">
+                            <span class="stat-label">Modules completed</span>
+                            <strong>18</strong>
+                        </div>
+                        <div class="mini-stat">
+                            <span class="stat-label">Modules in progress</span>
+                            <strong>03</strong>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="section">
+                <div class="section-head">
+                    <p class="eyebrow small">Performance trend</p>
+                    <h2>Your average per semester</h2>
+                    <p>A quick look at how your semester average has moved over time.</p>
+                </div>
+
+                <div class="bar-chart" aria-label="Semester average trend">
+                    <div class="bar-col">
+                        <div class="bar-track"><div class="bar-fill" style="height: 68%;"><span class="bar-value">68%</span></div></div>
+                        <span class="bar-label">Sem 1, 2025</span>
+                    </div>
+                    <div class="bar-col">
+                        <div class="bar-track"><div class="bar-fill" style="height: 74%;"><span class="bar-value">74%</span></div></div>
+                        <span class="bar-label">Sem 2, 2025</span>
+                    </div>
+                    <div class="bar-col">
+                        <div class="bar-track"><div class="bar-fill" style="height: 85%;"><span class="bar-value">85%</span></div></div>
+                        <span class="bar-label">Sem 1, 2026</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="section-head">
+                    <p class="eyebrow small">This semester</p>
+                    <h2>Modules in progress</h2>
+                </div>
+
+                <div class="results-table-wrap">
+                    <table class="results-table">
+                        <thead>
+                            <tr>
+                                <th>Module</th>
+                                <th>Module code</th>
+                                <th>Credits</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Programming I</td>
+                                <td class="code">CMPG211</td>
+                                <td>16</td>
+                                <td><span class="status-pill">In progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>Mathematics for Engineers</td>
+                                <td class="code">MTHS172</td>
+                                <td>16</td>
+                                <td><span class="status-pill">In progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>Analogue Electronics</td>
+                                <td class="code">ELYM215</td>
+                                <td>16</td>
+                                <td><span class="status-pill">In progress</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <footer class="site-footer">
+                <span>Result Repository — CMPG211 group project</span>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

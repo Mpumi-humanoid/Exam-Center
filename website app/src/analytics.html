@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Repository | Class Averages</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="analytics.css">
+</head>
+<body>
+    <div class="home-shell">
+        <header class="topbar">
+            <div class="brand-row">
+                <div class="brand-badge">R</div>
+                <div class="brand-copy">
+                    <span class="brand-name">Result Repository</span>
+                    <span class="brand-subtitle">admin console</span>
+                </div>
+            </div>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="home.html">← Welcome page</a>
+                <a href="admin.html">All results</a>
+                <a href="analytics.html" class="active">Class averages</a>
+                <a href="admin-profile.html">Profile</a>
+            </nav>
+
+            <div class="nav-actions">
+                <span class="admin-tag">His Holiness the Pope · Admin</span>
+                <a class="ghost-button" href="index.html">Log out</a>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="page-head">
+                <p class="eyebrow">Class performance</p>
+                <h1>Class averages</h1>
+                <p class="lead">See how each module and semester is performing across all enrolled students.</p>
+            </section>
+
+            <section class="summary-row">
+                <div class="summary-card">
+                    <span class="stat-label">Overall class average</span>
+                    <strong>81%</strong>
+                    <small>Across all modules, this semester</small>
+                </div>
+                <div class="summary-card">
+                    <span class="stat-label">Highest performing module</span>
+                    <strong>CMPG211</strong>
+                    <small>89% average</small>
+                </div>
+                <div class="summary-card">
+                    <span class="stat-label">Needs attention</span>
+                    <strong>MTHS172</strong>
+                    <small>68% average</small>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="section-head">
+                    <p class="eyebrow small">By module</p>
+                    <h2>Average mark per module</h2>
+                    <p>This semester's results, compared side by side.</p>
+                </div>
+
+                <div class="bar-chart" aria-label="Average mark per module">
+                    <div class="bar-col">
+                        <div class="bar-track"><div class="bar-fill" style="height: 89%;"><span class="bar-value">89%</span></div></div>
+                        <span class="bar-label">CMPG211</span>
+                    </div>
+                    <div class="bar-col">
+                        <div class="bar-track"><div class="bar-fill" style="height: 68%;"><span class="bar-value">68%</span></div></div>
+                        <span class="bar-label">MTHS172</span>
+                    </div>
+                    <div class="bar-col">
+                        <div class="bar-track"><div class="bar-fill" style="height: 79%;"><span class="bar-value">79%</span></div></div>
+                        <span class="bar-label">ELYM215</span>
+                    </div>
+                    <div class="bar-col">
+                        <div class="bar-track"><div class="bar-fill" style="height: 84%;"><span class="bar-value">84%</span></div></div>
+                        <span class="bar-label">CMPG221</span>
+                    </div>
+                    <div class="bar-col">
+                        <div class="bar-track"><div class="bar-fill" style="height: 72%;"><span class="bar-value">72%</span></div></div>
+                        <span class="bar-label">MTHS182</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="section-head">
+                    <p class="eyebrow small">Over time</p>
+                    <h2>Class average by semester</h2>
+                    <p>Tracking whether the overall class average is trending up or down.</p>
+                </div>
+
+                <div class="bar-chart" aria-label="Class average trend by semester">
+                    <div class="bar-col">
+                        <div class="bar-track"><div class="bar-fill" style="height: 74%;"><span class="bar-value">74%</span></div></div>
+                        <span class="bar-label">Sem 1, 2025</span>
+                    </div>
+                    <div class="bar-col">
+                        <div class="bar-track"><div class="bar-fill" style="height: 77%;"><span class="bar-value">77%</span></div></div>
+                        <span class="bar-label">Sem 2, 2025</span>
+                    </div>
+                    <div class="bar-col">
+                        <div class="bar-track"><div class="bar-fill" style="height: 81%;"><span class="bar-value">81%</span></div></div>
+                        <span class="bar-label">Sem 1, 2026</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="section-head-row">
+                    <div>
+                        <p class="eyebrow small">Breakdown</p>
+                        <h2>Module averages, this semester</h2>
+                    </div>
+                </div>
+
+                <div class="results-table-wrap">
+                    <table class="results-table">
+                        <thead>
+                            <tr>
+                                <th>Module</th>
+                                <th>Module code</th>
+                                <th>Students</th>
+                                <th>Average</th>
+                                <th>Pass rate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Programming I</td>
+                                <td class="code">CMPG211</td>
+                                <td>108</td>
+                                <td class="mark pass">89%</td>
+                                <td>97%</td>
+                            </tr>
+                            <tr>
+                                <td>Mathematics for Engineers</td>
+                                <td class="code">MTHS172</td>
+                                <td>96</td>
+                                <td class="mark warn">68%</td>
+                                <td>74%</td>
+                            </tr>
+                            <tr>
+                                <td>Analogue Electronics</td>
+                                <td class="code">ELYM215</td>
+                                <td>84</td>
+                                <td class="mark pass">79%</td>
+                                <td>88%</td>
+                            </tr>
+                            <tr>
+                                <td>Data Structures</td>
+                                <td class="code">CMPG221</td>
+                                <td>77</td>
+                                <td class="mark pass">84%</td>
+                                <td>92%</td>
+                            </tr>
+                            <tr>
+                                <td>Calculus II</td>
+                                <td class="code">MTHS182</td>
+                                <td>90</td>
+                                <td class="mark warn">72%</td>
+                                <td>79%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <footer class="site-footer">
+                <span>Result Repository — CMPG211 group project</span>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Repository | Sign in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-wrap">
+        <div class="login-card">
+            <div class="brand-row">
+                <div class="brand-badge">R</div>
+                <div class="brand-copy">
+                    <span class="brand-name">Result Repository</span>
+                    <span class="brand-subtitle">secure sign in</span>
+                </div>
+            </div>
+
+            <div class="header-block">
+                <p class="eyebrow">Secure access</p>
+                <h1>Sign in</h1>
+                <p class="tagline">Tell us who's logging in, then enter your details.</p>
+            </div>
+
+            <div class="role-switch" role="tablist" aria-label="Choose account type">
+                <button type="button" class="role-tab" data-role="student" id="tab-student" role="tab">Student</button>
+                <button type="button" class="role-tab" data-role="admin" id="tab-admin" role="tab">Admin / lecturer</button>
+            </div>
+
+            <form id="login-form" class="login-form">
+                <input type="hidden" id="role" name="role" value="student">
+
+                <div class="form-group">
+                    <label for="username" id="username-label">Student number</label>
+                    <input type="text" id="username" name="username" placeholder="STU-224871" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+
+                <div class="options-row">
+                    <label class="remember-me">
+                        <input type="checkbox" name="remember">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <button type="submit" id="submit-btn">Log in as student</button>
+            </form>
+
+            <p class="back-link"><a href="home.html">← Back to welcome page</a></p>
+        </div>
+    </div>
+
+    <script>
+        const tabStudent = document.getElementById('tab-student');
+        const tabAdmin = document.getElementById('tab-admin');
+        const roleInput = document.getElementById('role');
+        const usernameLabel = document.getElementById('username-label');
+        const usernameField = document.getElementById('username');
+        const submitBtn = document.getElementById('submit-btn');
+
+        function setRole(role) {
+            roleInput.value = role;
+            tabStudent.classList.toggle('active', role === 'student');
+            tabAdmin.classList.toggle('active', role === 'admin');
+
+            if (role === 'admin') {
+                usernameLabel.textContent = 'Staff username';
+                usernameField.placeholder = 'e.g. n.molefe';
+                submitBtn.textContent = 'Log in as admin';
+            } else {
+                usernameLabel.textContent = 'Student number';
+                usernameField.placeholder = 'STU-224871';
+                submitBtn.textContent = 'Log in as student';
+            }
+        }
+
+        tabStudent.addEventListener('click', () => setRole('student'));
+        tabAdmin.addEventListener('click', () => setRole('admin'));
+
+        // Preselect a role if the link included ?role=admin or ?role=student
+        const params = new URLSearchParams(window.location.search);
+        const requestedRole = params.get('role');
+        setRole(requestedRole === 'admin' ? 'admin' : 'student');
+
+        document.getElementById('login-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            // In the real app this is where the login request happens.
+            // For now, route straight to the matching dashboard.
+            if (roleInput.value === 'admin') {
+                window.location.href = 'admin.html';
+            } else {
+                window.location.href = 'results.html';
+            }
+        });
+    </script>
+</body>
+</html>

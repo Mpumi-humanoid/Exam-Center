@@ -1,0 +1,188 @@
+@'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamRepo | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="home-shell">
+        <header class="topbar">
+            <div class="brand-row">
+                <div class="brand-badge">ER</div>
+                <div class="brand-copy">
+                    <span class="brand-name">ExamRepo</span>
+                    <span class="brand-subtitle">student portal</span>
+                </div>
+            </div>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="#">Home</a>
+                <a href="#">Courses</a>
+                <a href="#">Resources</a>
+                <a href="#">Results</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="ghost-button" type="button">Log in</button>
+                <button class="primary-button" type="button">Get started</button>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">Your academic hub</p>
+                    <h1>Learn smarter and stay on top of every exam milestone.</h1>
+                    <p class="lead">
+                        Discover courses, manage assignments, monitor progress, and keep your academic goals moving forward with clarity.
+                    </p>
+
+                    <div class="cta-row">
+                        <button class="primary-button" type="button">Explore courses</button>
+                        <button class="secondary-button" type="button">View reports</button>
+                    </div>
+
+                    <ul class="mini-metrics" aria-label="Key metrics">
+                        <li>
+                            <strong>24</strong>
+                            <span>Active modules</span>
+                        </li>
+                        <li>
+                            <strong>94%</strong>
+                            <span>Avg. pass rate</span>
+                        </li>
+                        <li>
+                            <strong>12</strong>
+                            <span>Live sessions</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="hero-panel" aria-label="Progress overview">
+                    <div class="panel-card progress-card">
+                        <div class="panel-head">
+                            <span>Performance overview</span>
+                            <span class="status-pill">This week</span>
+                        </div>
+
+                        <div class="score-ring">
+                            <div class="ring-label">
+                                <strong>84%</strong>
+                                <span>Completion</span>
+                            </div>
+                        </div>
+
+                        <div class="task-list">
+                            <div class="task-item">
+                                <span>Assignment 3</span>
+                                <strong>92%</strong>
+                            </div>
+                            <div class="task-item">
+                                <span>Mock exam</span>
+                                <strong>86%</strong>
+                            </div>
+                            <div class="task-item">
+                                <span>Research brief</span>
+                                <strong>79%</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stats-grid" aria-label="Highlights">
+                <article class="stat-card">
+                    <span class="stat-label">Assignments due</span>
+                    <strong>06</strong>
+                    <small>Next 7 days</small>
+                </article>
+                <article class="stat-card">
+                    <span class="stat-label">Upcoming tests</span>
+                    <strong>03</strong>
+                    <small>Scheduled</small>
+                </article>
+                <article class="stat-card">
+                    <span class="stat-label">Study streak</span>
+                    <strong>14 days</strong>
+                    <small>Consistency score</small>
+                </article>
+            </section>
+
+            <section class="feature-layout">
+                <article class="feature-panel">
+                    <div class="section-header">
+                        <div>
+                            <p class="eyebrow small">Learning path</p>
+                            <h2>Everything you need to stay focused</h2>
+                        </div>
+                    </div>
+
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="icon-box violet">✓</div>
+                            <div>
+                                <h3>Course dashboard</h3>
+                                <p>Track modules, deadlines, and your learning milestones in one place.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="icon-box blue">★</div>
+                            <div>
+                                <h3>Smart recommendations</h3>
+                                <p>Surface the next steps based on your class performance and goals.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="icon-box green">▣</div>
+                            <div>
+                                <h3>Result insights</h3>
+                                <p>Review exam trends, feedback, and progress summaries in real time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <aside class="schedule-panel panel-card">
+                    <div class="panel-head">
+                        <span>Today</span>
+                        <span class="status-pill subtle" id="today-date">Loading...</span>
+                    </div>
+
+                    <ul class="schedule-list">
+                        <li>
+                            <div class="time-block">09:00</div>
+                            <div>
+                                <strong>Statistics seminar</strong>
+                                <small>Room A4</small>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="time-block">11:30</div>
+                            <div>
+                                <strong>Research lab</strong>
+                                <small>Group session</small>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="time-block">15:00</div>
+                            <div>
+                                <strong>Assignment review</strong>
+                                <small>Deadline check</small>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+'@ | Set-Content -Path "C:\Users\takat\Documents\project 224\my-login-page-app\src\index.html" -Encoding UTF8

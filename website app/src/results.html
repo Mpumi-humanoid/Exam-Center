@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Repository | My Results</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="results.css">
+</head>
+<body>
+    <div class="home-shell">
+        <header class="topbar">
+            <div class="brand-row">
+                <div class="brand-badge">R</div>
+                <div class="brand-copy">
+                    <span class="brand-name">Result Repository</span>
+                    <span class="brand-subtitle">student portal</span>
+                </div>
+            </div>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="home.html">← Welcome page</a>
+                <a href="home.html#how">How it works</a>
+                <a href="home.html#roles">Student / Admin</a>
+                <a href="results.html" class="active">Results</a>
+                <a href="profile.html">Profile</a>
+            </nav>
+
+            <div class="nav-actions">
+                <span class="student-tag">STU-224871</span>
+                <a class="ghost-button" href="index.html">Log out</a>
+            </div>
+        </header>
+
+        <main class="content">
+            <section class="page-head">
+                <p class="eyebrow">Verified record</p>
+                <h1>Your results</h1>
+                <p class="lead">Every mark below has passed validation and is tied to your student number.</p>
+            </section>
+
+            <section class="summary-row">
+                <div class="summary-card">
+                    <span class="stat-label">Overall average</span>
+                    <strong>85%</strong>
+                    <small>Across all semesters</small>
+                </div>
+                <div class="summary-card">
+                    <span class="stat-label">Modules completed</span>
+                    <strong>18</strong>
+                    <small>Since enrolment</small>
+                </div>
+                <div class="summary-card">
+                    <span class="stat-label">Current semester</span>
+                    <strong>Sem 1, 2026</strong>
+                    <small>3 modules in progress</small>
+                </div>
+            </section>
+
+            <section class="filter-row">
+                <div class="filter-group">
+                    <label for="semester-filter">Semester</label>
+                    <select id="semester-filter">
+                        <option>All semesters</option>
+                        <option>Semester 1, 2026</option>
+                        <option>Semester 2, 2025</option>
+                        <option>Semester 1, 2025</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="module-search">Module code</label>
+                    <input type="text" id="module-search" placeholder="e.g. CMPG211">
+                </div>
+            </section>
+
+            <section class="results-table-wrap">
+                <table class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Module</th>
+                            <th>Module code</th>
+                            <th>Semester</th>
+                            <th>Mark</th>
+                            <th>Grade</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Programming I</td>
+                            <td class="code">CMPG211</td>
+                            <td>Sem 1, 2026</td>
+                            <td class="mark pass">92%</td>
+                            <td>A</td>
+                            <td><span class="status-pill">Verified</span></td>
+                        </tr>
+                        <tr>
+                            <td>Mathematics for Engineers</td>
+                            <td class="code">MTHS172</td>
+                            <td>Sem 1, 2026</td>
+                            <td class="mark pass">86%</td>
+                            <td>A</td>
+                            <td><span class="status-pill">Verified</span></td>
+                        </tr>
+                        <tr>
+                            <td>Analogue Electronics</td>
+                            <td class="code">ELYM215</td>
+                            <td>Sem 1, 2026</td>
+                            <td class="mark pass">79%</td>
+                            <td>B</td>
+                            <td><span class="status-pill">Verified</span></td>
+                        </tr>
+                        <tr>
+                            <td>Data Structures</td>
+                            <td class="code">CMPG221</td>
+                            <td>Sem 2, 2025</td>
+                            <td class="mark pass">88%</td>
+                            <td>A</td>
+                            <td><span class="status-pill">Verified</span></td>
+                        </tr>
+                        <tr>
+                            <td>Calculus II</td>
+                            <td class="code">MTHS182</td>
+                            <td>Sem 2, 2025</td>
+                            <td class="mark warn">64%</td>
+                            <td>C</td>
+                            <td><span class="status-pill">Verified</span></td>
+                        </tr>
+                        <tr>
+                            <td>Digital Systems</td>
+                            <td class="code">ELYM225</td>
+                            <td>Sem 1, 2025</td>
+                            <td class="mark pending">—</td>
+                            <td>—</td>
+                            <td><span class="status-pill subtle">Pending</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <footer class="site-footer">
+                <span>Result Repository — CMPG211 group project</span>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
